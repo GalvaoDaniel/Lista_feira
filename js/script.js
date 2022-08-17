@@ -1,10 +1,3 @@
-var liPadrao = '<li>' + 
-'<div class="botoesItem" > ' + 
-'<img src="assets/success.png" alt="Check" width="20px" >' + 
-'<img src="assets/less.png" alt="Remove" width="20px" >' + 
-'</div>' + 
-'</li>';
-
 var listaItens;
 var itemInput;
 
@@ -17,11 +10,11 @@ window.onload = function() {
         if (event.key === "Enter") {
           document.getElementById("addButton").click();
         }
-      });
+    });
 }
 
 function removeItem(element) {
-    element.parentElement.parentElement.remove();
+    element.parentElement.parentElement.classList.add("removed");
 }
 
 function checkItem(element) {
@@ -49,6 +42,9 @@ function adicionaItemALista(item) {
 function criarLi(text) {
     let listItem = document.createElement("li");
     listItem.innerText = text;
+    listItem.addEventListener("transitionend", () => {
+        listItem.remove();
+    })
 
     let divBotoes = document.createElement("div");
     divBotoes.innerHTML = '<img src="assets/success.png" alt="Check" width="20px" onclick=checkItem(this)> ' + 

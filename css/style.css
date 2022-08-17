@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(104, 104, 104);
+    color: white;
+}
+
+.painelPrincipal {
+    background-color: rgb(170, 170, 170);
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 60px;
+    border-radius: 10px;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.inputsAddItem {
+    text-align: center;
+}
+
+#novoItemInput {
+    border: none;
+    padding: 10px;
+    width: 300px;
+    margin-right: 0px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#addButton {
+    background-color: #819090;
+    border: none;
+    color: white;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: 0px;
+    padding: 10px;
+}
+
+#listaItens {
+    padding: 0px;
+}
+
+#listaItens li {
+    list-style: none;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: rgb(90, 90, 90);
+    border-radius: 20px;
+}
+
+.checkedItem {
+    text-decoration: line-through;
+}
+
+.botoesItem {
+    display: inline;
+    float: right;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}

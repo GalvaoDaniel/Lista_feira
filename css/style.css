@@ -67,20 +67,20 @@ body {
 
 }
 
-.checkedItem {
-    text-decoration: line-through;
-}
-
 .botoesItem {
     display: inline;
     float: right;
 }
 
 .container {
-	display: flex;
+    display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+.checkedItem {
+    text-decoration: line-through;
 }
 
 .removed {

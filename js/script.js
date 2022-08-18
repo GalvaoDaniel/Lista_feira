@@ -5,6 +5,8 @@ window.onload = function() {
     listaItens = document.getElementById("listaItens");
     itemInput = document.getElementById("novoItemInput");
 
+    // Listener para ativar o evento de click ao apertar no 'Enter'.
+    // Feito para aumentar a praticidade da funcionalidade.
     itemInput.addEventListener("keypress", function(event) {
 
         if (event.key === "Enter") {
@@ -13,13 +15,17 @@ window.onload = function() {
     });
 }
 
+
 function removeItem(element) {
     element.parentElement.parentElement.classList.add("removed");
 }
 
+
 function checkItem(element) {
     element.parentElement.parentElement.classList.add("checkedItem");
 }
+
+// #### Métodos para adicionar li a ul
 
 function adicionaItem() {
     let item = itemInput.value;
